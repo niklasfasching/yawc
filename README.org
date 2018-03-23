@@ -1,0 +1,12 @@
+* Minimal webocket client in clojure
+
+I wanted to scrape something using chrome headless but got sidetracked into
+implementing a websocket client to implement the [[https://chromedevtools.github.io/devtools-protocol/][chrome devtools protocol]]
+because I disliked adding so many dependencies to my project for something
+that should be easy. At least the websocket [[https://tools.ietf.org/html/rfc6455][spec]] makes it sound like that - it's
+surprisingly readable.
+
+Goals:
+- learn clojure, learn more about bits & bytes & implementing network protocols
+- implement a client in less than 500 SLOC with good documentation (~ readadble in one sitting)
+- pass autobahn websocket client [[http://autobahn.ws/reports/clients/][testsuite]] excluding compression (12.x)
