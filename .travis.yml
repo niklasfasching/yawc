@@ -1,1 +1,10 @@
+sudo: required
+
 language: clojure
+
+services:
+  - docker
+
+script:
+  - lein test
+  - docker-compose up --exit-code-from headless
