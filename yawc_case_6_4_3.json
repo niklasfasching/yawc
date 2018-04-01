@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Same as Case 6.4.1, but we send message not in 3 frames, but in 3 chops of the same message frame.\n<br><br>MESSAGE PARTS:<br>\nPART1 = cebae1bdb9cf83cebcceb5<br>\nPART2 = f4908080<br>\nPART3 = 656469746564<br>\n",
    "droppedByMe": true,
-   "duration": 2004,
+   "duration": 2006,
    "expectation": "The first chop is accepted, we expect to timeout on the first wait. The 2nd chop should be rejected immediately (fail fast on UTF-8). If we timeout, we expect the connection is failed at least then, since the complete message payload is not valid UTF-8.",
    "expected": {
       "NON-STRICT": [
@@ -37,8 +37,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=76&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: r1895BjPEP7hZ0pcfjxMlw==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ZC5+TExSxehcsd4GoUkYD8zIQuc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=76&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: e/LLMpgUiHq16+uKxuDP3A==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 42uFjiDH7U8WB0TWBTb3dfBM0b0=\r\n\r\n",
    "id": "6.4.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -66,7 +66,7 @@
       "8": 1,
       "185": 1
    },
-   "started": "2018-04-01T14:10:59.260Z",
+   "started": "2018-04-01T14:12:02.011Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -89,7 +89,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3736266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20723138 ..."
+            "474554202f72756e436173653f636173653d3736266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20652f4c ..."
          ]
       ],
       [
@@ -180,7 +180,7 @@
          "RO",
          [
             8,
-            "888257df36715430"
+            "8882d994e0edda7b"
          ]
       ],
       [
@@ -193,7 +193,7 @@
          true,
          0,
          true,
-         "57df3671"
+         "d994e0ed"
       ],
       [
          "TF",

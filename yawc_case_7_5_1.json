@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a close frame with invalid UTF8 payload",
    "droppedByMe": true,
-   "duration": 3,
+   "duration": 5,
    "expectation": "Clean close with protocol error or invalid utf8 code or dropped TCP.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=222&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: OgCtZk3b6HBPUTVTvKKGwA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 70DksBImhYe3/DKQj+fOBYJFKFc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=222&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: ddfV2RRbgHtk1Qgg+ECTgg==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Ja0DRppnpOWK+imTx0SpZke9PbE=\r\n\r\n",
    "id": "7.5.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "8": 1,
       "186": 1
    },
-   "started": "2018-04-01T14:11:04.238Z",
+   "started": "2018-04-01T14:12:07.590Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -61,7 +61,7 @@
          "RO",
          [
             186,
-            "474554202f72756e436173653f636173653d323232266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a204f67 ..."
+            "474554202f72756e436173653f636173653d323232266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206464 ..."
          ]
       ],
       [
@@ -102,7 +102,7 @@
          "RO",
          [
             8,
-            "8882a7be71b7a451"
+            "88821ee6e3941d09"
          ]
       ],
       [
@@ -115,7 +115,7 @@
          true,
          0,
          true,
-         "a7be71b7"
+         "1ee6e394"
       ]
    ]
 }

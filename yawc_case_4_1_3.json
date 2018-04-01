@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=37&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: c0oAO03vSLIqMxiHozIc+Q==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: C1K0aqbgKq9RpaiwgtAQxHdHzmo=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=37&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: JkS9bua0J0mSfS7we6SMNw==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: XU8pCeHB32BeUXZnCXmLd3baKDM=\r\n\r\n",
    "id": "4.1.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "19": 1,
       "185": 1
    },
-   "started": "2018-04-01T14:10:52.834Z",
+   "started": "2018-04-01T14:11:55.594Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -80,7 +80,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3337266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a2063306f ..."
+            "474554202f72756e436173653f636173653d3337266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a204a6b53 ..."
          ]
       ],
       [
@@ -165,7 +165,7 @@
          "RO",
          [
             19,
-            "818d7f5549ff37302593107969881027259b5e"
+            "818d4755b4b50f30d8d9287994c22827d8d166"
          ]
       ],
       [
@@ -178,13 +178,13 @@
          true,
          0,
          true,
-         "7f5549ff"
+         "4755b4b5"
       ],
       [
          "RO",
          [
             8,
-            "888215bb36051651"
+            "88823ef006363d1a"
          ]
       ],
       [
@@ -197,7 +197,7 @@
          true,
          0,
          true,
-         "15bb3605"
+         "3ef00636"
       ],
       [
          "TF",
