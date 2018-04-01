@@ -8,3 +8,14 @@ services:
 script:
   - lein test
   - docker-compose up --exit-code-from headless
+
+deploy:
+  provider: pages
+  github-token: $GITHUB_TOKEN  # From travis-ci.org repository settings
+  local-dir: autobahn/reports/clients
+  target-branch: gh-pages
+  skip-cleanup: true
+  keep-history: true
+  verbose: true
+  on:
+    branch: master
