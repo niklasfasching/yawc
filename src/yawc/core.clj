@@ -12,7 +12,7 @@
   handshake succeeds, a HTTP response with status 101 is send back.
   See RFC 6455 - 4.2.1 for more information on the opening handshake from
   the client."
-  [{:keys [in out] :as client} {:keys [host port path] :as options}]
+  [{:keys [in out cb] :as client} {:keys [host port path] :as options}]
   (let [lines [(str "GET " path " HTTP/1.1")
                (str "Sec-WebSocket-Key: " (util/get-random-base64))
                (str "Host: " host ":" port)
@@ -24,7 +24,9 @@
     (.flush out)
     (let [response (util/read-http-response in)]
       (if (= (:status response) "101")
-        response
+        (do
+          (cb :connect response client)
+          response)
         (throw (ex-info "Could not connect to server" response))))))
 
 (defn emit
@@ -118,7 +120,7 @@
 (defn receive-loop
   "Receive frames for `client` in a loop until connection is closed.
   Calls `cb` for each (valid) received frame."
-  [client cb]
+  [{:keys [cb] :as client}]
   (try
     (loop [frames nil]
       (let [{:keys [fin opcode] :as frame} (receive client)]
@@ -148,8 +150,8 @@
   (let [socket (Socket. host port)
         in (io/input-stream socket)
         out (io/output-stream socket)
-        client {:socket socket :in in :out out :result (promise)}
-        cb (fn [type value client] (do (cb type value client) nil))]
+        client {:socket socket :in in :out out :result (promise)
+                :cb (fn [type value client] (do (cb type value client) nil))}]
     (connect client options)
-    (future (receive-loop client cb))
+    (future (receive-loop client))
     client))

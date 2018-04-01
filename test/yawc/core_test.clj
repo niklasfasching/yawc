@@ -21,7 +21,9 @@
                                "" ""])
         in (ByteArrayInputStream. (.getBytes response))
         out (ByteArrayOutputStream.)
-        client {:in in :out out :result (promise)}
+        on-connect (promise)
+        client {:in in :out out :result (promise)
+                :cb (fn [& args] (deliver on-connect args))}
         result (core/connect client {:host host :port port :path path})
         request (String. (.toByteArray out))]
     (is (= (:status result) "101"))
@@ -30,8 +32,12 @@
     (is (= (:headers result) {"upgrade" "websocket"
                               "connection" "Upgrade"
                               "sec-websocket-accept" "foobar"}))
-    (is (=(re-find #"Host:.*" request) "Host: localhost:9001"))
-    (is (=(re-find #"GET.*" request) "GET /path HTTP/1.1"))))
+    (is (= (re-find #"Host:.*" request) "Host: localhost:9001"))
+    (is (= (re-find #"GET.*" request) "GET /path HTTP/1.1"))
+    (let [[type payload cb-client] @on-connect]
+      (is (= type :connect))
+      (is (= payload result))
+      (is (= client cb-client)))))
 
 (deftest emit-test
   (testing "sensible defaults (rsv, fin, mask)"
