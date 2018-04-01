@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Close with <b>RSV = 7</b>.",
    "droppedByMe": true,
-   "duration": 3,
+   "duration": 4,
    "expectation": "The connection is failed immediately, since RSV must be 0.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=34&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: ERvmrE7yB1OQjirdzXUrZw==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: yptxkUlg7Ya49n1Pu9Ryo00dbJI=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=34&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: nCtvUR3S3Ocyn0EQmNCjOg==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: GLP7LcXygeVsw8NA1kd/XUrvlms=\r\n\r\n",
    "id": "3.7",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "8": 1,
       "185": 1
    },
-   "started": "2018-04-01T14:11:55.578Z",
+   "started": "2018-04-01T14:13:27.098Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 2
@@ -61,7 +61,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3334266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20455276 ..."
+            "474554202f72756e436173653f636173653d3334266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206e4374 ..."
          ]
       ],
       [
@@ -102,7 +102,7 @@
          "RO",
          [
             8,
-            "8882b36c0ec6b086"
+            "88823fb222ef3c58"
          ]
       ],
       [
@@ -115,7 +115,7 @@
          true,
          0,
          true,
-         "b36c0ec6"
+         "3fb222ef"
       ],
       [
          "TF",

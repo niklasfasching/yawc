@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unfragmented Text Message after Continuation Frame with FIN = true, where there is nothing to continue, sent in octet-wise chops.",
    "droppedByMe": true,
-   "duration": 9,
+   "duration": 13,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=55&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: aOIHrsPPee0EI2nNk5ealQ==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: jgQB0Da/EAJlR2S9x3CVo9LuYhs=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=55&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: zkUXBzqKOqTlDv1ua6WXTQ==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: vAIsDXSJaNxxlZifenFZ1hlHN8g=\r\n\r\n",
    "id": "5.11",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "8": 1,
       "185": 1
    },
-   "started": "2018-04-01T14:11:55.805Z",
+   "started": "2018-04-01T14:13:27.373Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -49,7 +49,7 @@
       "8": 1
    },
    "txOctetStats": {
-      "1": 29,
+      "1": 28,
       "206": 1
    },
    "wasClean": true,
@@ -62,7 +62,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3535266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20614f49 ..."
+            "474554202f72756e436173653f636173653d3535266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a207a6b55 ..."
          ]
       ],
       [
@@ -330,18 +330,10 @@
          true
       ],
       [
-         "TO",
-         [
-            1,
-            "48"
-         ],
-         true
-      ],
-      [
          "RO",
          [
             8,
-            "8882e3e7f467e00d"
+            "8882e9a9cb2aea43"
          ]
       ],
       [
@@ -354,7 +346,7 @@
          true,
          0,
          true,
-         "e3e7f467"
+         "e9a9cb2a"
       ],
       [
          "TF",
