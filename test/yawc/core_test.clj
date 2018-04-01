@@ -34,6 +34,18 @@
     (is (=(re-find #"GET.*" request) "GET /path HTTP/1.1"))))
 
 (deftest emit-test
+  (testing "sensible defaults (rsv, fin, mask)"
+    (let [payload (.getBytes "Hello")
+          out (ByteArrayOutputStream.)
+          client {:out out :result (promise)}]
+      (core/emit client {:opcode 9 :payload payload})
+      (let [emitted-bytes (.toByteArray out)
+            client (assoc client :in (ByteArrayInputStream. emitted-bytes))
+            frame (core/receive client)]
+        (is (= (:fin frame) 1))
+        (is (= (:mask frame) 1))
+        (is (= (:rsv frame) 0)))))
+
   ;; Example from RFC 6455 - 5.7
   (testing "A single-frame unmasked text message containing 'Hello'"
     (let [payload (.getBytes "Hello")

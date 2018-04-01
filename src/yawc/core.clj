@@ -29,12 +29,14 @@
 
 (defn emit
   "Emit websocket `frame` on `out` stream of `client`.
-  The frame should contain [fin opcode payload]. The keys [rsv mask masking-key]
-  are optional and default to {:rsv 0 :mask 1}"
+  The frame should contain [opcode payload].
+  The keys [fin rsv mask masking-key] are optional and default to
+  {:fin 1 :rsv 0 :mask 1}."
   [{:keys [out] :as client} {:keys [fin opcode payload rsv mask] :as frame}]
   (if (realized? (:result client))
     (throw (Exception. (str "Client has closed with " @(:result client))))
-    (let [rsv (or rsv 0)
+    (let [fin (or fin 1)
+          rsv (or rsv 0)
           mask (or mask 1)
           masking-key-bytes (if (= mask 1) (util/masking-key-bytes) nil)
           payload (if masking-key-bytes
@@ -59,7 +61,7 @@
                      (util/number->bits (.read in) 8))
         fin (util/bits->number bits 0 1)
         rsv (util/bits->number bits 1 4)
-        opcode (util/bits->number bits 4 8)
+        op (util/bits->number bits 4 8)
         mask (util/bits->number bits 8 9)
         length (let [length (util/bits->number bits 9 16)]
                  (cond (< length 126) length
@@ -67,7 +69,7 @@
                        (= length 127) (BigInteger. 1 (util/read-bytes in 8))
                        :else (util/error "Invalid payload length" nil 1002)))
         payload (util/read-bytes in length)]
-    {:fin fin :rsv rsv :opcode opcode :length length :payload payload}))
+    {:fin fin :rsv rsv :opcode op :length length :payload payload :mask mask}))
 
 (defn close
   "Close connection of `client` with `status-code` and `message` as payload.
