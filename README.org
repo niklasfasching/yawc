@@ -1,6 +1,6 @@
-* Minimal webocket client in clojure
+* yawc
 
-I wanted to scrape something using chrome headless but got sidetracked into
+I wanted to scrape something using chrome yawc but got sidetracked into
 implementing a websocket client to implement the [[https://chromedevtools.github.io/devtools-protocol/][chrome devtools protocol]]
 because I disliked adding so many dependencies to my project for something
 that should be easy. At least the websocket [[https://tools.ietf.org/html/rfc6455][spec]] makes it sound like that - it's

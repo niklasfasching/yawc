@@ -1,8 +1,8 @@
-(ns headless.core-test
+(ns yawc.core-test
   (:require [clojure.java.io :as io]
             [clojure.test :refer :all]
-            [headless.core :as core]
-            [headless.util :as util]
+            [yawc.core :as core]
+            [yawc.util :as util]
             [clojure.string :as string])
   (:import (java.lang Runtime)
            (java.io ByteArrayInputStream ByteArrayOutputStream File)

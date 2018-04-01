@@ -1,8 +1,8 @@
-(ns headless.util-test
+(ns yawc.util-test
   (:require [clojure.java.io :as io]
             [clojure.string :as string]
             [clojure.test :refer :all]
-            [headless.util :as util])
+            [yawc.util :as util])
   (:import (java.io ByteArrayInputStream EOFException StringReader)
            (java.util Arrays)))
 

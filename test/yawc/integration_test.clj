@@ -1,4 +1,4 @@
-(ns headless.integration-test
+(ns yawc.integration-test
   "Run the autobahn-testsuite client integration tests.
   The integration tests do not use clojure.test as they depend on the
   autobahn-testsuite docker container and have to be run inside docker-compose,
@@ -7,7 +7,7 @@
   (:refer-clojure :exclude [await])
   (:require [clojure.string :as string]
             [clojure.pprint :as pprint]
-            [headless.core :as core])
+            [yawc.core :as core])
   (:import javax.script.ScriptEngineManager))
 
 (def nashorn (.getEngineByName (ScriptEngineManager.) "nashorn"))
@@ -92,5 +92,5 @@
         (System/exit 0)))))
 
 (defn -main [host]
-  (let [options {:host host :port 9001 :agent "headless"}]
+  (let [options {:host host :port 9001 :agent "yawc"}]
     (run-test-cases options)))

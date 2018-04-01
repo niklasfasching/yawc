@@ -1,4 +1,4 @@
-(ns headless.util
+(ns yawc.util
   (:refer-clojure :exclude [read-line])
   (:require [clojure.string :as string])
   (:import (java.io ByteArrayOutputStream EOFException)

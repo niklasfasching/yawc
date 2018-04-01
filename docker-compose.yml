@@ -7,11 +7,11 @@ services:
       - ./autobahn/reports:/reports
     expose:
       - "9001"
-  headless:
+  yawc:
     image: clojure:alpine
     volumes:
-      - .:/usr/src/headless
-    working_dir: /usr/src/headless
-    command: lein run -m headless.integration-test "autobahn-server"
+      - .:/usr/src/yawc
+    working_dir: /usr/src/yawc
+    command: lein run -m yawc.integration-test "autobahn-server"
     depends_on:
       - autobahn-server

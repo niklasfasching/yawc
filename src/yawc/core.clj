@@ -1,8 +1,8 @@
-(ns headless.core
+(ns yawc.core
   "Minimal webocket client implementation according to RFC 6455."
   (:require [clojure.java.io :as io]
             [clojure.string :as string]
-            [headless.util :as util])
+            [yawc.util :as util])
   (:import (clojure.lang ExceptionInfo)
            (java.net Socket)))
 
