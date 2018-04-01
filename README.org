@@ -1,4 +1,4 @@
-* yawc (yet another websocket client) [[https://travis-ci.org/niklasfasching/headless.svg?branch=master]]
+* yawc (yet another websocket client) [[https://travis-ci.org/niklasfasching/yawc.svg?branch=master]]
 
 A minimal (< 500 SLOC) websocket client in clojure - without any dependencies.
 
