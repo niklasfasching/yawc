@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 256K message followed by close then a ping",
    "droppedByMe": true,
-   "duration": 66,
+   "duration": 67,
    "expectation": "Case outcome depends on implementation defined close behavior. Message and close frame are sent back to back. If the close frame is processed before the text message write is complete (as can happen in asynchronous processing models) the close frame is processed first and the text message may not be received or may only be partially recieved.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=215&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: BxPGqkNVNlNGERK7mDOD9w==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ELrRSkqUkDUUgAWqBp0IwFo8kUY=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=215&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: eWsIEsgsZhDsjCY7zRUOfw==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: lmtNKF31XG3Ch1qYtm16qzmUVOk=\r\n\r\n",
    "id": "7.1.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -57,12 +57,11 @@
       "8": 1
    },
    "rxOctetStats": {
+      "40": 1,
       "186": 1,
-      "23570": 1,
-      "42006": 1,
-      "65536": 3
+      "65536": 4
    },
-   "started": "2018-04-01T13:53:35.853Z",
+   "started": "2018-04-01T14:06:24.076Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -86,7 +85,7 @@
          "RO",
          [
             186,
-            "474554202f72756e436173653f636173653d323135266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a204278 ..."
+            "474554202f72756e436173653f636173653d323135266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206557 ..."
          ]
       ],
       [
@@ -192,36 +191,36 @@
       [
          "RO",
          [
-            42006,
-            "81ff0000000000040000b0e3982ff2a2eb4b87c5f24782d0da6ec387af09da8baa1cf2a2eb4b87c5f24782d0da6ec387af09da8baa1cf2a2eb4b87c5f24782d0 ..."
+            65536,
+            "81ff0000000000040000e8699c37aa28ef53df4ff65fda5ade769b0dab118201ae04aa28ef53df4ff65fda5ade769b0dab118201ae04aa28ef53df4ff65fda5a ..."
          ]
       ],
       [
          "RO",
          [
             65536,
-            "c387af09da8baa1cf2a2eb4b87c5f24782d0da6ec387af09da8baa1cf2a2eb4b87c5f24782d0da6ec387af09da8baa1cf2a2eb4b87c5f24782d0da6ec387af09 ..."
+            "ef53df4ff65fda5ade769b0dab118201ae04aa28ef53df4ff65fda5ade769b0dab118201ae04aa28ef53df4ff65fda5ade769b0dab118201ae04aa28ef53df4f ..."
          ]
       ],
       [
          "RO",
          [
             65536,
-            "82d0da6ec387af09da8baa1cf2a2eb4b87c5f24782d0da6ec387af09da8baa1cf2a2eb4b87c5f24782d0da6ec387af09da8baa1cf2a2eb4b87c5f24782d0da6e ..."
+            "ae04aa28ef53df4ff65fda5ade769b0dab118201ae04aa28ef53df4ff65fda5ade769b0dab118201ae04aa28ef53df4ff65fda5ade769b0dab118201ae04aa28 ..."
          ]
       ],
       [
          "RO",
          [
             65536,
-            "87c5f24782d0da6ec387af09da8baa1cf2a2eb4b87c5f24782d0da6ec387af09da8baa1cf2a2eb4b87c5f24782d0da6ec387af09da8baa1cf2a2eb4b87c5f247 ..."
+            "ab118201ae04aa28ef53df4ff65fda5ade769b0dab118201ae04aa28ef53df4ff65fda5ade769b0dab118201ae04aa28ef53df4ff65fda5ade769b0dab118201 ..."
          ]
       ],
       [
          "RO",
          [
-            23570,
-            "f2a2eb4b87c5f24782d0da6ec387af09da8baa1cf2a2eb4b87c5f24782d0da6ec387af09da8baa1cf2a2eb4b87c5f24782d0da6ec387af09da8baa1cf2a2eb4b ..."
+            40,
+            "de769b0dab118201ae04aa28ef53818c5ca6f3e114c39f8d3386a48e2eca97c088824020778743c8"
          ]
       ],
       [
@@ -234,7 +233,7 @@
          true,
          0,
          true,
-         "b0e3982f"
+         "e8699c37"
       ],
       [
          "RF",
@@ -246,7 +245,7 @@
          true,
          0,
          true,
-         "caa39c0d"
+         "5ca6f3e1"
       ],
       [
          "RF",
@@ -258,7 +257,7 @@
          true,
          0,
          true,
-         "280d578b"
+         "40207787"
       ]
    ]
 }
