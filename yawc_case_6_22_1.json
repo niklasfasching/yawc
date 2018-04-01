@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is valid UTF-8 in one fragment.<br><br>Payload: 0xefbfbe",
    "droppedByMe": true,
-   "duration": 8,
+   "duration": 5,
    "expectation": "The message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=169&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: TZ7ngm1Rt6j/8H2m9yiG9Q==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: rcpoudUlHMlJXPoGfnMU56ZcBEo=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=169&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: Ops8b/iaxvOA0wCwIw7bdg==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: gfTdOCs5zHopDCY36k96EFXbyyQ=\r\n\r\n",
    "id": "6.22.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "9": 1,
       "186": 1
    },
-   "started": "2018-04-01T14:16:01.186Z",
+   "started": "2018-04-01T17:00:58.527Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -76,7 +76,7 @@
          "RO",
          [
             186,
-            "474554202f72756e436173653f636173653d313639266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20545a ..."
+            "474554202f72756e436173653f636173653d313639266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a204f70 ..."
          ]
       ],
       [
@@ -117,7 +117,7 @@
          "RO",
          [
             9,
-            "81832f341e21c08ba0"
+            "81834d7d6e8ca2c2d0"
          ]
       ],
       [
@@ -130,7 +130,7 @@
          true,
          0,
          true,
-         "2f341e21"
+         "4d7d6e8c"
       ],
       [
          "TF",
@@ -158,7 +158,7 @@
          "RO",
          [
             8,
-            "8882a63f709ea5d7"
+            "88823ba2f66c384a"
          ]
       ],
       [
@@ -171,7 +171,7 @@
          true,
          0,
          true,
-         "a63f709e"
+         "3ba2f66c"
       ]
    ]
 }

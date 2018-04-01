@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Pong fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 3,
+   "duration": 2,
    "expectation": "Connection is failed immediately, since control message MUST NOT be fragmented.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=46&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: AIjKLgfEbRj1SAQV9zE8EA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: x1CO3nnVpkG6uI6dWZ+dYZK/BFc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=46&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: 8L/WSwjlbADPMoR4YT9B7w==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: YkyQaguck5Ti/A7ZiMNnGZpNxcU=\r\n\r\n",
    "id": "5.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "8": 1,
       "185": 1
    },
-   "started": "2018-04-01T14:15:49.870Z",
+   "started": "2018-04-01T17:00:47.520Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -63,7 +63,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3436266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a2041496a ..."
+            "474554202f72756e436173653f636173653d3436266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20384c2f ..."
          ]
       ],
       [
@@ -126,7 +126,7 @@
          "RO",
          [
             8,
-            "8882e9f0c2c3ea1a"
+            "8882e4021465e7e8"
          ]
       ],
       [
@@ -139,7 +139,7 @@
          true,
          0,
          true,
-         "e9f0c2c3"
+         "e4021465"
       ],
       [
          "TF",
