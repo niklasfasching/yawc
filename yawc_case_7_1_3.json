@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a ping after close message",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 3,
    "expectation": "Clean close with normal code, no pong.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=212&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: WXaLt/0Wm1YpVsEjqONOEg==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: NU+05HqJ75hxp7nk+x1snUbo/wk=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=212&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: rLSZeaFRlxDmmtHmsLT7kA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: hPQAqtn/OTURKOl3MSd8rdlsKjs=\r\n\r\n",
    "id": "7.1.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "8": 1,
       "186": 1
    },
-   "started": "2018-04-01T13:31:02.537Z",
+   "started": "2018-04-01T13:53:35.839Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -62,7 +62,7 @@
          "RO",
          [
             186,
-            "474554202f72756e436173653f636173653d323132266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a205758 ..."
+            "474554202f72756e436173653f636173653d323132266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20724c ..."
          ]
       ],
       [
@@ -125,7 +125,7 @@
          "RO",
          [
             8,
-            "88826ea027f96d48"
+            "88825147a58e52af"
          ]
       ],
       [
@@ -138,7 +138,7 @@
          true,
          0,
          true,
-         "6ea027f9"
+         "5147a58e"
       ]
    ]
 }

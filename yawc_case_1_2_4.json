@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=12&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: 96dct446Gs3YEw34z0kshg==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: TsTyLYbtzqKUOJoqMrULr3x9AmY=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=12&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: jPqfmmd0LeLvN8VNcRPrJA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ybpOejEtLS83hT8LLoyj3lcNdZo=\r\n\r\n",
    "id": "1.2.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "135": 1,
       "185": 1
    },
-   "started": "2018-04-01T13:30:50.976Z",
+   "started": "2018-04-01T13:53:24.218Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -76,7 +76,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3132266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20393664 ..."
+            "474554202f72756e436173653f636173653d3132266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206a5071 ..."
          ]
       ],
       [
@@ -117,7 +117,7 @@
          "RO",
          [
             135,
-            "82fe007f9e2003b960defd4760defd4760defd4760defd4760defd4760defd4760defd4760defd4760defd4760defd4760defd4760defd4760defd4760defd47 ..."
+            "82fe007fe412f2761aec0c881aec0c881aec0c881aec0c881aec0c881aec0c881aec0c881aec0c881aec0c881aec0c881aec0c881aec0c881aec0c881aec0c88 ..."
          ]
       ],
       [
@@ -130,7 +130,7 @@
          true,
          0,
          true,
-         "9e2003b9"
+         "e412f276"
       ],
       [
          "TF",
@@ -158,7 +158,7 @@
          "RO",
          [
             8,
-            "8882a8731a48ab9b"
+            "8882b0ec195cb304"
          ]
       ],
       [
@@ -171,7 +171,7 @@
          true,
          0,
          true,
-         "a8731a48"
+         "b0ec195c"
       ]
    ]
 }

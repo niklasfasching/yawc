@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=42&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: AtkssnYPYR+IPZpMYLOkmg==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: F31A3olJUUHaQlL4qmUeRRlrukU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=42&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: cEDeHncwkkOOtqjaBOXj2g==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: EMUaU3mr62e8Asks+onsoOdmrfo=\r\n\r\n",
    "id": "4.2.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "27": 1,
       "185": 1
    },
-   "started": "2018-04-01T13:30:51.328Z",
+   "started": "2018-04-01T13:53:24.583Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -79,7 +79,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3432266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a2041746b ..."
+            "474554202f72756e436173653f636173653d3432266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20634544 ..."
          ]
       ],
       [
@@ -164,7 +164,7 @@
          "RO",
          [
             27,
-            "818df02a59d5b84f35b99f0679a29f5835b1d18882c5d4bdadc63e"
+            "818dc21a20d38a7f4cbfad3600a4ad684cb7e3888204d72f76073d"
          ]
       ],
       [
@@ -177,7 +177,7 @@
          true,
          0,
          true,
-         "f02a59d5"
+         "c21a20d3"
       ],
       [
          "RF",
@@ -189,7 +189,7 @@
          true,
          0,
          true,
-         "c5d4bdad"
+         "04d72f76"
       ],
       [
          "TF",
