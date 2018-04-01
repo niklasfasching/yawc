@@ -2,3 +2,4 @@
 /autobahn/reports
 /.nrepl-port
 /.lein-failures
+/.lein-repl-history
