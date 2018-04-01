@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=29&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: AqEQt9qxHQ4i56t+iSy9nA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 2Q7J7LKb+6VvHJI1YXR4X6Zfbs0=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=29&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: cwK28Ut4Mr9INCVJuKL2UA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: qHjdjlS//kzCUAO7ApEyf566gmo=\r\n\r\n",
    "id": "3.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "27": 1,
       "185": 1
    },
-   "started": "2018-04-01T14:13:27.056Z",
+   "started": "2018-04-01T14:15:49.716Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -78,7 +78,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3239266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20417145 ..."
+            "474554202f72756e436173653f636173653d3239266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a2063774b ..."
          ]
       ],
       [
@@ -163,7 +163,7 @@
          "RO",
          [
             27,
-            "818d83130b6fcb766703ec3f2b18ec61670ba2888284a542d2874f"
+            "818d06d060044eb50c6869fc407369a20c60278882ce81bc8acd6b"
          ]
       ],
       [
@@ -176,7 +176,7 @@
          true,
          0,
          true,
-         "83130b6f"
+         "06d06004"
       ],
       [
          "RF",
@@ -188,7 +188,7 @@
          true,
          0,
          true,
-         "84a542d2"
+         "ce81bc8a"
       ],
       [
          "TF",

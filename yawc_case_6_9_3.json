@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=102&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: nKR2lJuwQTjdpxWg/EWCBQ==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: eOCRZzoJ3iYKTlYblMqhVrLpaxw=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=102&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: MCM0WlDjt+IBvvyEPlHQTw==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 9HNymxXDBVqZWxoe4a15nntXtnU=\r\n\r\n",
    "id": "6.9.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "9": 1,
       "186": 1
    },
-   "started": "2018-04-01T14:13:37.946Z",
+   "started": "2018-04-01T14:16:00.595Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -76,7 +76,7 @@
          "RO",
          [
             186,
-            "474554202f72756e436173653f636173653d313032266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206e4b ..."
+            "474554202f72756e436173653f636173653d313032266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a204d43 ..."
          ]
       ],
       [
@@ -117,7 +117,7 @@
          "RO",
          [
             9,
-            "8183edfbab92024414"
+            "81835f9b07e0b024b8"
          ]
       ],
       [
@@ -130,7 +130,7 @@
          true,
          0,
          true,
-         "edfbab92"
+         "5f9b07e0"
       ],
       [
          "TF",
@@ -158,7 +158,7 @@
          "RO",
          [
             8,
-            "8882ff686424fc80"
+            "8882026886620180"
          ]
       ],
       [
@@ -171,7 +171,7 @@
          true,
          0,
          true,
-         "ff686424"
+         "02688662"
       ]
    ]
 }

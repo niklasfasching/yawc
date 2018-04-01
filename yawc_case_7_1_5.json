@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send message fragment1 followed by close then fragment",
    "droppedByMe": true,
-   "duration": 42,
+   "duration": 6,
    "expectation": "Clean close with normal code.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=214&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: j1VkG4Oq+BZW3+BCpCtNsQ==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: KD7Z+ZqeZYLvXt/aPFOVhXQRd1g=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=214&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: j0JGxY0L0OFuR4zpuh3ZJw==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: yR5Ui3H5uCitbOXoPuFfzCajTvc=\r\n\r\n",
    "id": "7.1.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "8": 1,
       "186": 1
    },
-   "started": "2018-04-01T14:13:39.148Z",
+   "started": "2018-04-01T14:16:01.665Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -63,7 +63,7 @@
          "RO",
          [
             186,
-            "474554202f72756e436173653f636173653d323134266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206a31 ..."
+            "474554202f72756e436173653f636173653d323134266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206a30 ..."
          ]
       ],
       [
@@ -148,7 +148,7 @@
          "RO",
          [
             8,
-            "88820b3aabac08d2"
+            "88828149870282a1"
          ]
       ],
       [
@@ -161,7 +161,7 @@
          true,
          0,
          true,
-         "0b3aabac"
+         "81498702"
       ]
    ]
 }
