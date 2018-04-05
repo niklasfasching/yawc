@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Same as Case 5.19, but send all frames with SYNC = True.\n   Note, this does not change the octets sent in any way, only how the stream\n   is chopped up on the wire.",
    "droppedByMe": true,
-   "duration": 1011,
+   "duration": 1015,
    "expectation": "Same as Case 5.19. Implementations must be agnostic to how\n   octet stream is chopped up on wire (must be TCP clean).",
    "expected": {
       "OK": [
@@ -35,8 +35,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=64&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: 7t9ISSrodfDvua4eh5zeHg==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: z6inBd01WJsp7BReup0ELR5a3lY=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=64&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: SHsxebCtNoTkar2wC0TuiQ==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: X0FO6Gmv3mJJJ7wBkuFNRgoQTjM=\r\n\r\n",
    "id": "5.20",
    "isServer": true,
    "localCloseCode": 1000,
@@ -73,7 +73,7 @@
       "51": 1,
       "185": 1
    },
-   "started": "2018-04-01T17:00:48.739Z",
+   "started": "2018-04-05T11:51:10.000Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -96,7 +96,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3634266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20377439 ..."
+            "474554202f72756e436173653f636173653d3634266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20534873 ..."
          ]
       ],
       [
@@ -182,7 +182,7 @@
          "RO",
          [
             15,
-            "8a890c08ca2c7c67a44b616dea1d2d"
+            "8a89789ee4b008f18ad715fbc48159"
          ]
       ],
       [
@@ -195,7 +195,7 @@
          true,
          0,
          true,
-         "0c08ca2c"
+         "789ee4b0"
       ],
       [
          "CTE",
@@ -297,7 +297,7 @@
          "RO",
          [
             15,
-            "8a89de686b14ae070573b30d4b26ff"
+            "8a89341fb42a4470da4d597a941815"
          ]
       ],
       [
@@ -310,13 +310,13 @@
          true,
          0,
          true,
-         "de686b14"
+         "341fb42a"
       ],
       [
          "RO",
          [
             51,
-            "81ad280435994e7654fe45615bed196247f84f6950f75c3653eb496358fc467006ff5a6552f44d6a41ad4e7654fe45615bed1d"
+            "81ad45ec0595239e64f228896be1748a77f4228160fb31de63e7248b68f02b9836f3378d62f8208271a1239e64f228896be170"
          ]
       ],
       [
@@ -329,7 +329,7 @@
          true,
          0,
          true,
-         "28043599"
+         "45ec0595"
       ],
       [
          "TF",
@@ -357,7 +357,7 @@
          "RO",
          [
             8,
-            "8882489407034b7c"
+            "8882775708da74bf"
          ]
       ],
       [
@@ -370,7 +370,7 @@
          true,
          0,
          true,
-         "48940703"
+         "775708da"
       ]
    ]
 }

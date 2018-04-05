@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 1k.",
    "droppedByMe": true,
-   "duration": 1209,
+   "duration": 836,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=272&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: auDkEjApRSUTaNlbwhj6JA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 1ktTXuL3uw+UDcaz5xWZeVlInkM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=272&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: +tcaSCeFsCepFS/9KWufJA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: b8UG6flCtjdiMf0MH8HYH9YPe2A=\r\n\r\n",
    "id": "9.4.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,12 +38,11 @@
    },
    "rxOctetStats": {
       "8": 1,
+      "14": 1,
       "186": 1,
-      "7254": 1,
-      "58296": 1,
-      "65536": 63
+      "65536": 64
    },
-   "started": "2018-04-01T17:01:28.153Z",
+   "started": "2018-04-05T11:51:45.468Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4096,
@@ -66,7 +65,7 @@
          "RO",
          [
             186,
-            "474554202f72756e436173653f636173653d323732266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206175 ..."
+            "474554202f72756e436173653f636173653d323732266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a202b74 ..."
          ]
       ],
       [
@@ -107,7 +106,7 @@
          "RO",
          [
             8,
-            "8882ff506f67fcb8"
+            "88824e34df524ddc"
          ]
       ],
       [
@@ -120,7 +119,7 @@
          true,
          0,
          true,
-         "ff506f67"
+         "4e34df52"
       ]
    ]
 }
