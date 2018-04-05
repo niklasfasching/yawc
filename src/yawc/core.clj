@@ -8,7 +8,7 @@
 
 (defn connect
   "Connect to websocket server and return input and output streams.
-  A websocket connection in opened by performing a HTTP handshake. If the
+  A websocket connection is opened by performing a HTTP handshake. If the
   handshake succeeds, a HTTP response with status 101 is send back.
   See RFC 6455 - 4.2.1 for more information on the opening handshake from
   the client."
