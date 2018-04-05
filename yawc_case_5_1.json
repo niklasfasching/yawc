@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Ping fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 3,
    "expectation": "Connection is failed immediately, since control message MUST NOT be fragmented.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=45&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: 6s6hPTJy5WfvMgWjKgbb0g==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: S1dzyF00wEytFpiWPSawpXzqSik=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=45&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: DYpZTqcgTwOyxcl8dqVygA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: FQLRb3I1gM0MUCs5zsnP71Gs1vk=\r\n\r\n",
    "id": "5.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "8": 1,
       "185": 1
    },
-   "started": "2018-04-05T11:51:08.806Z",
+   "started": "2018-04-05T23:06:01.186Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -63,7 +63,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3435266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20367336 ..."
+            "474554202f72756e436173653f636173653d3435266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20445970 ..."
          ]
       ],
       [
@@ -126,7 +126,7 @@
          "RO",
          [
             8,
-            "888277ab70587441"
+            "88825517ec0156fd"
          ]
       ],
       [
@@ -139,7 +139,7 @@
          true,
          0,
          true,
-         "77ab7058"
+         "5517ec01"
       ],
       [
          "TF",

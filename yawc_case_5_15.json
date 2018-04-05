@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text Message fragmented into 2 fragments, then Continuation Frame with FIN = false where there is nothing to continue, then unfragmented Text Message, all sent in one chop.",
    "droppedByMe": true,
-   "duration": 4,
+   "duration": 5,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=59&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: nANTzFhHKcKS3wjqhSWmIA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: heRqTfJ+Pqo8yjfMzNrsv3a3t4U=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=59&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: 2WNjwy9slYhULbyLtU5mjw==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: hymsyLzRePUt2ETf5GkIw1MrSTM=\r\n\r\n",
    "id": "5.15",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "32": 1,
       "185": 1
    },
-   "started": "2018-04-05T11:51:08.977Z",
+   "started": "2018-04-05T23:06:01.388Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 2,
@@ -77,7 +77,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3539266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206e414e ..."
+            "474554202f72756e436173653f636173653d3539266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a2032574e ..."
          ]
       ],
       [
@@ -184,7 +184,7 @@
          "RO",
          [
             32,
-            "81929e0aa34ff878c228f36fcd3baf6cd12ef967c621ea38888233762f58309c"
+            "81922e6f1969481d780e430a771d1f096b0849027c075a5d8882e3898243e063"
          ]
       ],
       [
@@ -197,7 +197,7 @@
          true,
          0,
          true,
-         "9e0aa34f"
+         "2e6f1969"
       ],
       [
          "RF",
@@ -209,7 +209,7 @@
          true,
          0,
          true,
-         "33762f58"
+         "e3898243"
       ],
       [
          "TF",

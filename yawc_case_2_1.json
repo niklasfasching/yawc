@@ -26,8 +26,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=17&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: Urc39f1YXxv/LiB1Mtxaiw==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: PflanZoHEmdk1uqJm4tFA5mYmkQ=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=17&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: xCkFnRgtTnydd9MJpTZw1g==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: rGafEDLj8EZQyNiXnxUW7o8GK2w=\r\n\r\n",
    "id": "2.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -53,7 +53,7 @@
       "8": 1,
       "185": 1
    },
-   "started": "2018-04-05T11:51:08.547Z",
+   "started": "2018-04-05T23:06:00.844Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -74,7 +74,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3137266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20557263 ..."
+            "474554202f72756e436173653f636173653d3137266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a2078436b ..."
          ]
       ],
       [
@@ -115,7 +115,7 @@
          "RO",
          [
             6,
-            "8a80f915055c"
+            "8a8034a7ea76"
          ]
       ],
       [
@@ -128,7 +128,7 @@
          true,
          0,
          true,
-         "f915055c"
+         "34a7ea76"
       ],
       [
          "TF",
@@ -156,7 +156,7 @@
          "RO",
          [
             8,
-            "88829a1a447899f2"
+            "8882eb0fe756e8e7"
          ]
       ],
       [
@@ -169,7 +169,7 @@
          true,
          0,
          true,
-         "9a1a4478"
+         "eb0fe756"
       ]
    ]
 }
