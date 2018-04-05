@@ -23,22 +23,22 @@
   Java provides BufferedReader for this use case, but we cannot use it as we
   want to work on the raw stream (bytes) after the HTTP handshake. A
   BufferedReader would read ahead and buffer (d'uh) and thus prevent us from
-  reading the bytes from the stream ourselves."
-  [in]
+  reading those bytes from the raw stream ourselves."
+  [stream]
   (loop [bytes []]
-    (let [byte (.read in)]
+    (let [byte (.read stream)]
       (cond
         (= byte -1) (throw (EOFException. "EOF while trying to read line."))
         (= byte newline-byte) (String. (byte-array bytes))
         :else (recur (conj bytes byte))))))
 
 (defn read-bytes
-  "Read exactly `n` bytes from `stream` (= readFully from DataInputStream).
-  The default (.read stream byte-array) method does not necessarily fill
+  "Read exactly `n` bytes from `stream`. Same as `DataInputStream.readFully`.
+  The default `InputStream.read` byte-array method does not necessarily fill
   the whole byte array passed to it. As this is oftentimes exactly what we want,
-  this function wraps the default read to loop until we got everything we need.
-  As the default read blocks until at least one byte has been read, the loop is
-  going to be easy on our poor processor."
+  this function wraps the default `read` to loop until we got everything we
+  need. Note that the default `read` blocks until at least one byte has been
+  read."
   [stream n]
   (if (> n 0)
     (loop [bs (byte-array n)
@@ -52,8 +52,8 @@
 
 (defn read-http-response
   "Read a HTTP response from `stream` into {:status :reason :headers :content}.
-  All values apart from :headers are strings. Headers are a map of header to
-  header value. Header names are normalized to all lower-case."
+  All values apart from :headers are strings. Headers are a map of header name
+  to header value. Header names are normalized to all lower-case."
   [stream]
   (let [status-line (read-line stream)
         [match status reason] (re-find #"HTTP[^ ]+ (\d+) (.*)" status-line)]
@@ -109,8 +109,8 @@
 (defn bytes->utf8
   "Convert bytes `bs` to utf8 string. Throws exception on malformed utf8.
   Casting bytes to string using (String. bs) replaces malformed bytes/characters
-  with some default rather than throwing an exception. To satisfy the websocket
-  spec receiving malformed utf8 must not be accepted, so this is required."
+  with some default character rather than throwing an exception. To satisfy the
+  websocket spec receiving malformed utf8 must not be accepted."
   [bs]
   (try
     (->> (ByteBuffer/wrap bs) (.decode utf8-decoder) .toString)
@@ -149,7 +149,7 @@
     seed))
 
 (defn mask-payload
-  "Return `payload` masked with masking `key-bytes`.
+  "Return `payload` masked with masking-key `key-bytes`.
   `key-bytes` are generated via `masking-key-bytes` and xored with the `payload`
   bytes. As the payload can get quite big, this function has been optimized and
   is not as pretty as it could be. Profiling led to an evolution of:

@@ -7,9 +7,11 @@
            (java.net Socket)))
 
 (defn connect
-  "Connect to websocket server and return input and output streams.
+  "Perform http handshake via `in` and `out` streams. Returns HTTP response.
+  Also emits :connect with http response as payload on `cb` of `client`.
+
   A websocket connection is opened by performing a HTTP handshake. If the
-  handshake succeeds, a HTTP response with status 101 is send back.
+  handshake succeeds, a HTTP response with status 101 is sent back.
   See RFC 6455 - 4.2.1 for more information on the opening handshake from
   the client."
   [{:keys [in out cb] :as client} {:keys [host port path] :as options}]
@@ -32,8 +34,8 @@
 (defn emit
   "Emit websocket `frame` on `out` stream of `client`.
   The frame should contain [opcode payload].
-  The keys [fin rsv mask masking-key] are optional and default to
-  {:fin 1 :rsv 0 :mask 1}."
+  The keys [fin rsv mask] are optional and default to {:fin 1 :rsv 0 :mask 1}.
+  The masking-key is generated automatically if mask is not 0."
   [{:keys [out] :as client} {:keys [fin opcode payload rsv mask] :as frame}]
   (if (realized? (:result client))
     (throw (Exception. (str "Client has closed with " @(:result client))))
@@ -56,8 +58,8 @@
       (.flush out))))
 
 (defn receive
-  "Receive a websocket frame from the `in` stream of `client`.
-  The frame contains the keys [fin rsv opcode length payload]."
+  "Receive a websocket frame on the `in` stream of `client`.
+  The frame contains the keys [fin rsv opcode mask length payload]."
   [{:keys [in] :as client}]
   (let [bits (concat (util/number->bits (.read in) 8)
                      (util/number->bits (.read in) 8))
@@ -75,7 +77,7 @@
 
 (defn close
   "Close connection of `client` with `status-code` and `message` as payload.
-  The client should but is not required to wait for the server to close the
+  The client should (but is not required to) wait for the server to close the
   connection. Waiting complicates things so we are bad and close immediately."
   [client status-code message]
   (let [payload (concat (and status-code (.toByteArray (biginteger status-code)))
@@ -101,7 +103,11 @@
 (defn handle-frame
   "React to `frame` by emitting reply to `client` and notifying `cb`.
   cb is called with message type, payload & client as arguments.
-  Message type is one of #(:text :binary :close :ping :pong).
+  - type is one of #{:text :binary :ping :pong :close}.
+  - payload is
+    - utf8 string for :text
+    - binary for :ping, :pong & :binary
+    - {status-code message} for :close
   Validates opcode of `frame` to correspond to one of the above message types."
   [client {:keys [opcode payload] :as frame} cb]
   (condp = opcode
@@ -140,12 +146,8 @@
 
 (defn open
   "Returns a websocket client connected to `host`:`port`/`path`.
-  Whenever a message is received `cb` is called with (cb type payload client).
-  - type is one of :text :binary :ping :pong :close.
-  - payload is
-    - utf8 string for :text
-    - binary for :ping, :pong & :binary
-    - {status-code message} for :close"
+  Whenever a message is received `cb` is called with (cb type payload client) -
+  see `handle-frame` for more information."
   [{:keys [host port cb] :as options}]
   (let [socket (Socket. host port)
         in (io/input-stream socket)
