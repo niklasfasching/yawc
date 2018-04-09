@@ -6,8 +6,8 @@ services:
   - docker
 
 script:
-  - lein test
-  - docker-compose up --exit-code-from yawc
+  - make test
+  - make integration-test
 
 deploy:
   provider: pages

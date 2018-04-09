@@ -20,3 +20,7 @@ Passes the [[https://github.com/crossbario/autobahn-testsuite][autobahn websocke
 (yawc/emit client {:opcode 1 :payload (.getBytes "Hello World!")}))
 ;; => :text Hello World!
 #+END_SRC
+
+* Todo List
+- improve performance
+  - do bit operations in java rather than clojure https://github.com/phillord/primitive-operator
