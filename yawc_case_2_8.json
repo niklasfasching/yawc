@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unsolicited pong with payload. Verify nothing is received. Clean close with normal code.",
    "droppedByMe": true,
-   "duration": 5,
+   "duration": 3,
    "expectation": "Nothing.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=24&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: RWq220ByM1GDsodDUsPdvQ==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 3ypeGwZ573ESLwCgrQ9Dw/tispU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=24&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: O6Zi/DY5f8JD0Gqgly4/Rg==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: VEUOEc/5EjQPALGxWycD+wl4N9U=\r\n\r\n",
    "id": "2.8",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "8": 1,
       "185": 1
    },
-   "started": "2018-04-05T23:06:00.941Z",
+   "started": "2018-04-09T18:45:25.057Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -62,7 +62,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3234266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20525771 ..."
+            "474554202f72756e436173653f636173653d3234266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a204f365a ..."
          ]
       ],
       [
@@ -125,7 +125,7 @@
          "RO",
          [
             8,
-            "88822a7c31da2994"
+            "8882e7bb4451e453"
          ]
       ],
       [
@@ -138,7 +138,7 @@
          true,
          0,
          true,
-         "2a7c31da"
+         "e7bb4451"
       ]
    ]
 }

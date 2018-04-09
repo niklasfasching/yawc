@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message with <b>RSV = 1</b>.",
    "droppedByMe": true,
-   "duration": 3,
+   "duration": 4,
    "expectation": "The connection is failed immediately (1002/protocol error), since RSV must be 0, when no extension defining RSV meaning has been negotiated.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=28&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: /rL/PftZovTdvVyAiG2hPg==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 43tnLdF/S2gZ47KTs0uarMVWBHk=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=28&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: xUpGzwlv8aBiLlgy3QY4kA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: mvzNoURHGmIGbL+w/H9A0yHvSo0=\r\n\r\n",
    "id": "3.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "8": 1,
       "185": 1
    },
-   "started": "2018-04-05T23:06:01.054Z",
+   "started": "2018-04-09T18:45:25.151Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -62,7 +62,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3238266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a202f724c ..."
+            "474554202f72756e436173653f636173653d3238266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20785570 ..."
          ]
       ],
       [
@@ -103,7 +103,7 @@
          "RO",
          [
             8,
-            "88822485e83a276f"
+            "888239b3c8c73a59"
          ]
       ],
       [
@@ -116,7 +116,7 @@
          true,
          0,
          true,
-         "2485e83a"
+         "39b3c8c7"
       ],
       [
          "TF",

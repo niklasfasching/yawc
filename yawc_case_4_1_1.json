@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send frame with reserved non-control <b>Opcode = 3</b>.",
    "droppedByMe": true,
-   "duration": 3,
+   "duration": 2,
    "expectation": "The connection is failed immediately.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=35&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: KVJVm+PqPhNKeI9gNLkfGA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: +Adn0wCmehu2RuCTpc6KoTTTubE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=35&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: F+qVB1XTteQWtO+dTZjn8Q==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: kCTm6LwWlqK1fjWv0XBUreyEbW8=\r\n\r\n",
    "id": "4.1.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "8": 1,
       "185": 1
    },
-   "started": "2018-04-05T23:06:01.099Z",
+   "started": "2018-04-09T18:45:25.186Z",
    "trafficStats": null,
    "txFrameStats": {
       "3": 1,
@@ -62,7 +62,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3335266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a204b564a ..."
+            "474554202f72756e436173653f636173653d3335266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20462b71 ..."
          ]
       ],
       [
@@ -103,7 +103,7 @@
          "RO",
          [
             8,
-            "88821600177415ea"
+            "8882e91b9c98eaf1"
          ]
       ],
       [
@@ -116,7 +116,7 @@
          true,
          0,
          true,
-         "16001774"
+         "e91b9c98"
       ],
       [
          "TF",
