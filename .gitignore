@@ -3,3 +3,4 @@
 /.nrepl-port
 /.lein-failures
 /.lein-repl-history
+/pom.xml
