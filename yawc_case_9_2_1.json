@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=255&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: nYcYGwmMx0oydLrKD0NW5g==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ehY9mADusU1xcIUOpo7nvE1iaBU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=255&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: Q9eeoCwBVEPTWWJ6JYCeKA==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: pn4aA/jcHVnede8FR/dfXYe/5So=\r\n\r\n",
    "id": "9.2.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,11 @@
    },
    "rxOctetStats": {
       "8": 1,
+      "14": 1,
       "186": 1,
-      "23544": 1,
-      "42006": 1
+      "65536": 1
    },
-   "started": "2018-04-09T18:45:42.347Z",
+   "started": "2018-04-10T18:56:52.975Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -63,7 +63,7 @@
          "RO",
          [
             186,
-            "474554202f72756e436173653f636173653d323535266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206e59 ..."
+            "474554202f72756e436173653f636173653d323535266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a205139 ..."
          ]
       ],
       [
@@ -104,7 +104,7 @@
          "RO",
          [
             8,
-            "8882c23d62f4c1d5"
+            "888268cdc1f06b25"
          ]
       ],
       [
@@ -117,7 +117,7 @@
          true,
          0,
          true,
-         "c23d62f4"
+         "68cdc1f0"
       ]
    ]
 }

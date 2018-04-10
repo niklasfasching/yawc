@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a valid UTF-8 text message in two fragments, fragmented on UTF-8 code point boundary.<br><br>MESSAGE FRAGMENT 1:<br>Hello-\u00b5@\u00df\u00f6\u00e4<br>48656c6c6f2dc2b540c39fc3b6c3a4<br><br>MESSAGE FRAGMENT 2:<br>\u00fc\u00e0\u00e1-UTF-8!!<br>c3bcc3a0c3a12d5554462d382121",
    "droppedByMe": true,
-   "duration": 5,
+   "duration": 18,
    "expectation": "The message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=69&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: jLTsVHGw/XRVGKciGIBarg==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 1MaDeg+sVgXgk9hTIpWASqd8glo=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=69&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: tRzpKfNDP3Mi3k0n+JHSDg==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: KbxcRmoq9oQRO/yJio3XxVA2QpE=\r\n\r\n",
    "id": "6.2.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "35": 1,
       "185": 1
    },
-   "started": "2018-04-09T18:45:27.485Z",
+   "started": "2018-04-10T18:56:37.678Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -78,7 +78,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3639266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206a4c54 ..."
+            "474554202f72756e436173653f636173653d3639266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a2074527a ..."
          ]
       ],
       [
@@ -141,7 +141,7 @@
          "RO",
          [
             35,
-            "819d14b983195cdcef757b9441ac547a1cdaa27a27daa87a23dab594d64d5294bb3835"
+            "819d39f547d571902bb956d885607936d8168f36e3168536e71698d812817fd87ff418"
          ]
       ],
       [
@@ -154,7 +154,7 @@
          true,
          0,
          true,
-         "14b98319"
+         "39f547d5"
       ],
       [
          "TF",
@@ -182,7 +182,7 @@
          "RO",
          [
             8,
-            "88822d8e81af2e66"
+            "8882b4399894b7d1"
          ]
       ],
       [
@@ -195,7 +195,7 @@
          true,
          0,
          true,
-         "2d8e81af"
+         "b4399894"
       ]
    ]
 }

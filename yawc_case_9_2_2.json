@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=256&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: 8jg103J8DZFjvLqY7hjbOQ==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: a7BFIdhFiUU1f34jFLZZnDig0c8=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=256&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: Ag3c/odttLexQMJRdxvYag==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: hvEsOvxMQ7B7MhOHg+VV//iU9g8=\r\n\r\n",
    "id": "9.2.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,12 @@
    },
    "rxOctetStats": {
       "8": 1,
-      "14": 1,
       "186": 1,
-      "65536": 4
+      "13046": 1,
+      "52504": 1,
+      "65536": 3
    },
-   "started": "2018-04-09T18:45:42.366Z",
+   "started": "2018-04-10T18:56:52.993Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -63,7 +64,7 @@
          "RO",
          [
             186,
-            "474554202f72756e436173653f636173653d323536266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20386a ..."
+            "474554202f72756e436173653f636173653d323536266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a204167 ..."
          ]
       ],
       [
@@ -104,7 +105,7 @@
          "RO",
          [
             8,
-            "888286442a8585ac"
+            "88826647272365af"
          ]
       ],
       [
@@ -117,7 +118,7 @@
          true,
          0,
          true,
-         "86442a85"
+         "66472723"
       ]
    ]
 }
