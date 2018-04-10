@@ -102,7 +102,7 @@
 
 (defn handle-frame
   "React to `frame` by emitting reply to `client` and notifying `cb`.
-  cb is called with message type, payload & client as arguments.
+  cb is called synchronously with message type, payload & client as arguments.
   - type is one of #{:text :binary :ping :pong :close}.
   - payload is
     - utf8 string for :text
@@ -125,7 +125,7 @@
 
 (defn receive-loop
   "Receive frames for `client` in a loop until connection is closed.
-  Calls `cb` for each (valid) received frame."
+  Synchronously calls `cb` for each (valid) received frame."
   [{:keys [cb] :as client}]
   (try
     (loop [frames nil]
@@ -147,7 +147,8 @@
 (defn open
   "Returns a websocket client connected to `host`:`port`/`path`.
   Whenever a message is received `cb` is called with (cb type payload client) -
-  see `handle-frame` for more information."
+  see `handle-frame` for more information. Note that cb is called synchronously
+  and should thus not block."
   [{:keys [host port cb] :as options}]
   (let [socket (Socket. host port)
         in (io/input-stream socket)

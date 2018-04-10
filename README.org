@@ -2,7 +2,7 @@
 
 A minimal (< 500 SLOC) websocket client in clojure - without any dependencies.
 
-Passes the [[https://github.com/crossbario/autobahn-testsuite][autobahn websockets testsuite]] (see [[https://niklasfasching.github.io/headless/][results]]).
+Passes the [[https://github.com/crossbario/autobahn-testsuite][autobahn websockets testsuite]] (see [[https://niklasfasching.github.io/yawc/][results]]).
 
 ** Usage
 
