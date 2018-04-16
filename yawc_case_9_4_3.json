@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 1k.",
    "droppedByMe": true,
-   "duration": 895,
+   "duration": 851,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=272&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: nJadjDwyS0vAOGqxFBEc0w==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: VGj0u3NRKAE9nPl+xmOWQ4Ggvds=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=272&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: B1klUvZmB4ChKHP9WZAwLQ==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: UxLSjM0eMOr8Sz/I2GwxvYUNtJw=\r\n\r\n",
    "id": "9.4.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "186": 1,
       "65536": 64
    },
-   "started": "2018-04-10T18:57:11.411Z",
+   "started": "2018-04-16T14:01:24.359Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4096,
@@ -65,7 +65,7 @@
          "RO",
          [
             186,
-            "474554202f72756e436173653f636173653d323732266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a206e4a ..."
+            "474554202f72756e436173653f636173653d323732266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a204231 ..."
          ]
       ],
       [
@@ -106,7 +106,7 @@
          "RO",
          [
             8,
-            "88827f81aabd7c69"
+            "88828a93e6dd897b"
          ]
       ],
       [
@@ -119,7 +119,7 @@
          true,
          0,
          true,
-         "7f81aabd"
+         "8a93e6dd"
       ]
    ]
 }

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send ping without payload.",
    "droppedByMe": true,
-   "duration": 5,
+   "duration": 4,
    "expectation": "Pong (with empty payload) is sent in reply to Ping. Clean close with normal code.",
    "expected": {
       "OK": [
@@ -26,8 +26,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=17&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: f0kCA6RAE8H250HSiYKMJw==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: d/khbwXdzZ2ySwi45etwLN3QMTQ=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=17&agent=yawc HTTP/1.1\r\nSec-WebSocket-Key: Pysq5xzkeaLMD0/VzRaiKw==\r\nHost: autobahn-server:9001\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.7.6-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: e8Yfo+Je0rQMoTBjarhHcpSC3Yc=\r\n\r\n",
    "id": "2.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -53,7 +53,7 @@
       "8": 1,
       "185": 1
    },
-   "started": "2018-04-10T18:56:35.103Z",
+   "started": "2018-04-16T14:00:44.851Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -74,7 +74,7 @@
          "RO",
          [
             185,
-            "474554202f72756e436173653f636173653d3137266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a2066306b ..."
+            "474554202f72756e436173653f636173653d3137266167656e743d7961776320485454502f312e310d0a5365632d576562536f636b65742d4b65793a20507973 ..."
          ]
       ],
       [
@@ -115,7 +115,7 @@
          "RO",
          [
             6,
-            "8a800500d066"
+            "8a801a680e96"
          ]
       ],
       [
@@ -128,7 +128,7 @@
          true,
          0,
          true,
-         "0500d066"
+         "1a680e96"
       ],
       [
          "TF",
@@ -156,7 +156,7 @@
          "RO",
          [
             8,
-            "88822e476c6f2daf"
+            "88820bffd06b0817"
          ]
       ],
       [
@@ -169,7 +169,7 @@
          true,
          0,
          true,
-         "2e476c6f"
+         "0bffd06b"
       ]
    ]
 }
